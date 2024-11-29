@@ -5,14 +5,14 @@
 
 class   Meal {
     private:
-        std::string mainDish;
-        std::string sideDish;
-        std::string drink;
-        std::string Dessert;
+        std::string _mainDish;
+        std::string _sideDish;
+        std::string _drink;
+        std::string _dessert;
     public:
+        void    setMainDish(const std::string& mainDish);
+        void    setSideDish(const std::string& sideDish);
+        void    setDrink(const std::string& drink);
+        void    setDessert(const std::string& Dessert);
         void    calculatePrice();
-        void    setMainDish();
-        void    setSideDish();
-        void    setDrink();
-        void    setDessert();
-}
+};

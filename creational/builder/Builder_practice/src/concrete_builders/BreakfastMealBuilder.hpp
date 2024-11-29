@@ -2,8 +2,10 @@
 
 #include "../MealBuilder.hpp"
 
-class BreakfastMealBuilder : MealBuilder {
+class BreakfastMealBuilder : public MealBuilder {
     public:
+        void   buildMainDish(); 
+        void   buildSideDish();
         void   buildDrink(); 
-        void   buildDessert(); 
+        void   buildDessert();
 };

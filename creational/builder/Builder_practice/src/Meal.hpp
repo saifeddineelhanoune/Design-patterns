@@ -14,5 +14,5 @@ class   Meal {
         void    setSideDish(const std::string& sideDish);
         void    setDrink(const std::string& drink);
         void    setDessert(const std::string& Dessert);
-        void    calculatePrice();
+        void    showSpecs();
 };

@@ -1,13 +1,17 @@
 #include "DinnerMealBuilder.hpp"
 
-void    DinnerMealBuilder::BuildMainDish() {
-    meal->setMainDish("American Burger & Potatoe");
+void    DinnerMealBuilder::buildMainDish() {
+    meal->setMainDish("American Burger");
 }
 
-void    DinnerMealBuilder::BuildDrink() {
+void    DinnerMealBuilder::buildDrink() {
     meal->setDrink("Cola Soda");
 }
 
-void    DinnerMealBuilder::BuildDessert() {
+void    DinnerMealBuilder::buildDessert() {
     meal->setDessert("Cheese Cake");
+}
+
+void    DinnerMealBuilder::buildSideDish() {
+    meal->setDessert("Potatoe");
 }

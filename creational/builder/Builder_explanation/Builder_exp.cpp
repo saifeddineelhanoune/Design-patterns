@@ -47,7 +47,7 @@ class ComputerAssembler {
         void    setBuilder(ComputerBuilder* newBuilder) {
             builder = newBuilder;
         }
-        Computer*   contructComputer() {
+        Computer*   constructComputer() {
             builder->buildCPU();
             builder->buildRAM();
             builder->buildStorage();
@@ -60,7 +60,7 @@ int main() {
     GamingComputerBuilder gamingBuilder;
 
     assembler.setBuilder(&gamingBuilder);
-    Computer *gamingPC = assembler.contructComputer();
+    Computer *gamingPC = assembler.constructComputer();
     gamingPC->showSpecs();
     delete gamingPC;
     return EXIT_SUCCESS;
